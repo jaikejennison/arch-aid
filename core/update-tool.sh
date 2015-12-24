@@ -4,27 +4,15 @@ clear
 
 echo -e '\e[1;31m-----------\e[0m
 \e[0;37mUpdate Tool:\e[0m
-\e[1;31m--------------------------------------------------------------
-
------------------------------\e[0m
-\e[0;37mupdating/upgrading [aptitude]:\e[0m
-\e[1;31m-----------------------------\e[0m';
-
-
-pacman --color=always -Syyu
-#sudo aptitude -y safe-upgrade
-echo -e '\e[1;31m----\e[0m
-\e[0;37mdone:\e[0m
-\e[1;31m----
-
-----------------------------\e[0m
-\e[0;37mupdating/upgrading [apt-get]:\e[0m
-\e[1;31m----------------------------\e[0m';
-
-#sudo apt-get -y update
-#sudo apt-get -y upgrade
-#sudo apt-get autoremove
-
+\e[1;31m--------------------------------------------------------------';
+#sudo rm -f /var/lib/pacman/db.lck
+#sudo pacman-key --init
+#sudo pacman-key --populate archlinux manjaro
+sudo pacman -Syy
+sudo pacman-key --refresh-keys
+sudo pacman-key --populate archlinux manjaro
+sudo pacman --color=always -Sc
+#sudo pacman --color=always -Syyu
 echo -e '\e[1;31m----\e[0m
 \e[0;37mdone:\e[0m
 \e[1;31m----
