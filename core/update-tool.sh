@@ -5,14 +5,17 @@ clear
 echo -e '\e[1;31m-----------\e[0m
 \e[0;37mUpdate Tool:\e[0m
 \e[1;31m--------------------------------------------------------------';
-#sudo rm -f /var/lib/pacman/db.lck
-#sudo pacman-key --init
+#sudo rm -Rf /etc/pacman.d/gnupg
+sudo rm -f /root/.gnupg
+sudo gpg --refresh-keys
+#sudo pacman-key --init && pacman-key --populate
+#sudo pacman -Syy
+#sudo pacman-key --refresh-keys
 #sudo pacman-key --populate archlinux manjaro
-sudo pacman -Syy
-sudo pacman-key --refresh-keys
-sudo pacman-key --populate archlinux manjaro
-sudo pacman --color=always -Sc
-#sudo pacman --color=always -Syyu
+#sudo pacman --color=always -Sc
+sudo pacman --color=always -S gnutils libassuan
+sudo pacman-db-upgrade
+sudo pacman --color=always -Syu
 echo -e '\e[1;31m----\e[0m
 \e[0;37mdone:\e[0m
 \e[1;31m----
