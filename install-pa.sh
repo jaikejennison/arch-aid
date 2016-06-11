@@ -9,7 +9,7 @@ QUIT="quit"
 if [ "$QUIT" = "$D" ]; then
 	exit
 	else
-	pacman -S "$D"
+	sudo pacman -S "$D"
 fi
 exit
 #--------------------------------------------------------------
