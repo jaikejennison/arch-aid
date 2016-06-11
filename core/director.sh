@@ -6,8 +6,8 @@ read AGT
 #-------
 ABT="about"
 AUT="update"
+ARP="repair"
 AST="search"
-ALT="list"
 AQT="quit"
 #--------------------------------------------------------------
 if [ "$ABT" = "$AGT" ]; then
@@ -17,7 +17,7 @@ if [ "$ABT" = "$AGT" ]; then
 
 fi
 if [ "$ALT" = "$AGT" ]; then
-	./app_list.sh
+	./repair-tool.sh
 	else
 	echo ""
 

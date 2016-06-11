@@ -4,17 +4,17 @@ clear
 echo -e '\e[1;31m-----------\e[0m
 \e[0;37mUpdate Tool:\e[0m
 \e[1;31m--------------------------------------------------------------';
-#sudo rm -Rf /etc/pacman.d/gnupg
-#sudo rm -Rf /root/.gnupg
-#sudo gpg --refresh-keys
-#sudo pacman-key --init && pacman-key --populate
-#sudo pacman -Syy
-#sudo pacman-key --refresh-keys
-#sudo pacman-key --populate archlinux manjaro
-#sudo pacman --color=always -Sc
-#sudo pacman --color=always -S gnutils libassuan
-#sudo pacman-db-upgrade
-#sudo pacman-optimize
+sudo rm -Rf /etc/pacman.d/gnupg
+sudo rm -Rf /root/.gnupg
+sudo gpg --refresh-keys
+sudo pacman-key --init && pacman-key --populate
+sudo pacman -Syy
+sudo pacman-key --refresh-keys
+sudo pacman-key --populate archlinux manjaro
+sudo pacman --color=always -Sc
+sudo pacman --color=always -S gnutils libassuan
+sudo pacman-db-upgrade
+sudo pacman-optimize
 sudo pacman --color=always -Syu
 echo -e '\e[1;31m---------\e[0m
 \e[0;37mWhats New\e[0m
