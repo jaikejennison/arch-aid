@@ -1,6 +1,0 @@
-# lynx session
-g file://localhost/root/ShellTools/Git%20Hub/arch-aid/out.html
-g file://localhost/root/ShellTools/Git%20Hub/arch-aid/input.html
-h 1 1 file://localhost/root/ShellTools/Git%20Hub/arch-aid/out.html	ASCII Generator
-V 0 file://localhost/root/ShellTools/Git%20Hub/arch-aid/input.html	Entry into main screen
-V 1 file://localhost/root/ShellTools/Git%20Hub/arch-aid/out.html	ASCII Generator
